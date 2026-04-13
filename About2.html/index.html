@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="35 Frames Photography - Premium photography services for weddings, couples, engagements, maternity, and family portraits. Serving clients worldwide from USA, UK, Europe, and UAE.">
+    <meta name="keywords" content="photography, wedding photography, couple photography, maternity photography, professional photographer, luxury photography">
+    <meta name="author" content="35 Frames Photography">
+    <meta name="theme-color" content="#FF6B35">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="35 Frames Photography | Luxury Photography Services">
+    <meta property="og:description" content="Award-winning photography that transforms your most cherished moments into works of art.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/35-Frames-Photography.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <title>35 Frames Photography | Luxury Photography Services</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/35-Frames-Photography.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+   
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <img src="assets/images/35-Frames-Photography.png" alt="35 Frames Photography" class="logo-img">
+                </a>
+            </div>
+            <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/index.html" class="nav-link">Home</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="wedding-photography-bangalore.html" class="nav-link">Wedding</a></li>
+                <li><a href="maternity-photoshoot-in-bangalore.html" class="nav-link">Maternity</a></li>
+                <li><a href="pre-engagement-photoshoot-in-bangalore.html" class="nav-link">Engagement</a></li>
+                 <li><a href="couple-photoshoot-in-bangalore.html" class="nav-link">Couple</a></li>
+                <li><a href="corporate-photography-in-bangalore.html" class="nav-link">Corporate</a></li>
+                <li><a href="kids-photoshoot-bangalore.html" class="nav-link">Kids</a></li> 
+                <li><a href="product-photography-in-bangalore.html" class="nav-link">Product</a></li>   
+                <li><a href="contact.html" class="nav-link nav-link-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__1_.jpeg" alt="Maternity Photography" loading="eager">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-slide">
+                <img src="assets/images/35F00172.JPG" alt="Wedding Photography" loading="lazy">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-slide">
+                <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__6_.jpeg" alt="Couple Photography" loading="lazy">
+                <div class="hero-overlay"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-subtitle fade-in" style="margin-top: 30px;">Capturing Life's Precious Moments</span>
+                <h1 class="hero-title fade-in-up">Timeless Elegance.<br>Unforgettable Stories.</h1>
+                <p class="hero-description fade-in-up-delay">Award-winning photography that transforms your most cherished moments into works of art. Serving discerning clients across USA, UK, Europe, and UAE.</p>
+                <div class="hero-cta fade-in-up-delay-2" style="align-items: center;">
+                    <a href="#portfolio" class="btn btn-primary">View Our Work</a>
+                    <a href="#contact" class="btn btn-secondary">Book a Session</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-controls">
+            <button class="hero-arrow hero-prev" id="heroPrev" aria-label="Previous slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="hero-arrow hero-next" id="heroNext" aria-label="Next slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to Explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Expertise</span>
+                <h2 class="section-title">Portfolio Collections</h2>
+                <p class="section-description">Explore our curated galleries showcasing the artistry and emotion we bring to every frame</p>
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Collections</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="couple">Couple</button>
+                <button class="filter-btn" data-filter="engagement">Engagement</button>
+                <button class="filter-btn" data-filter="kid">Kids</button>
+                <button class="filter-btn" data-filter="maternity">Maternity</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Wedding Photography -->
+                <div class="portfolio-item" data-category="wedding">
+                    <div class="portfolio-image">
+                        <img src="assets/images/35F00172.JPG" alt="Wedding Photography" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Wedding</span>
+                                <h3 class="portfolio-title">Elegant Celebrations</h3>
+                                <button class="portfolio-view" data-lightbox="wedding">View Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Couple Photography -->
+                <div class="portfolio-item" data-category="couple">
+                    <div class="portfolio-image">
+                        <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__6_.jpeg" alt="Couple Photography" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Couple</span>
+                                <h3 class="portfolio-title">Love Stories</h3>
+                                <button class="portfolio-view" data-lightbox="couple">View Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engagement Photography -->
+                <div class="portfolio-item" data-category="engagement">
+                    <div class="portfolio-image">
+                        <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__5_.jpeg" alt="Engagement Photography" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Engagement</span>
+                                <h3 class="portfolio-title">The Beginning</h3>
+                                <button class="portfolio-view" data-lightbox="engagement">View Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kid Photography -->
+                <div class="portfolio-item" data-category="kid">
+                    <div class="portfolio-image">
+                        <img src="assets/images/04.jpg" alt="Kid Photography" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Kids</span>
+                                <h3 class="portfolio-title">Precious Innocence</h3>
+                                <button class="portfolio-view" data-lightbox="kid">View Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maternity Photography -->
+                <div class="portfolio-item" data-category="maternity">
+                    <div class="portfolio-image">
+                        <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__1_.jpeg" alt="Maternity Photography" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Maternity</span>
+                                <h3 class="portfolio-title">Expecting Joy</h3>
+                                <button class="portfolio-view" data-lightbox="maternity">View Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Portfolio Items -->
+                <div class="portfolio-item" data-category="wedding">
+                    <div class="portfolio-image">
+                        <img src="assets/images/35F00173.JPG" alt="Wedding Photography" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Wedding</span>
+                                <h3 class="portfolio-title">Sacred Moments</h3>
+                                <button class="portfolio-view" data-lightbox="wedding">View Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="maternity">
+                    <div class="portfolio-image">
+                        <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__2_.jpeg" alt="Maternity Photography" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Maternity</span>
+                                <h3 class="portfolio-title">Awaiting Miracles</h3>
+                                <button class="portfolio-view" data-lightbox="maternity">View Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="maternity">
+                    <div class="portfolio-image">
+                        <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__3_.jpeg" alt="Maternity Photography" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Maternity</span>
+                                <h3 class="portfolio-title">Glowing Beauty</h3>
+                                <button class="portfolio-view" data-lightbox="maternity">View Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="couple">
+                    <div class="portfolio-image">
+                        <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__7_.jpeg" alt="Couple Photography" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Couple</span>
+                                <h3 class="portfolio-title">Perfect Together</h3>
+                                <button class="portfolio-view" data-lightbox="couple">View Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Featured Work</span>
+                <h2 class="section-title">Image Gallery</h2>
+                <p class="section-description">A curated selection of our most captivating photographs</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-tall">
+                    <img src="assets/images/35F00172.JPG" alt="Gallery Image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-expand">+</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__1_.jpeg" alt="Gallery Image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-expand">+</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__2_.jpeg" alt="Gallery Image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-expand">+</button>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-wide">
+                    <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__6_.jpeg" alt="Gallery Image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-expand">+</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__3_.jpeg" alt="Gallery Image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-expand">+</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__4_.jpeg" alt="Gallery Image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-expand">+</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/35F00167.JPG" alt="Gallery Image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-expand">+</button>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-tall">
+                    <img src="assets/images/05.jpg" alt="Gallery Image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-expand">+</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/35F00173.JPG" alt="Gallery Image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-expand">+</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__5_.jpeg" alt="Gallery Image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-expand">+</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__7_.jpeg" alt="Gallery Image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-expand">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/04.jpg" alt="About 35 Frames Photography" loading="lazy">
+                    <div class="about-image-decoration"></div>
+                </div>
+                <div class="about-text">
+                    <span class="section-subtitle">About Us</span>
+                    <h2 class="section-title">Crafting Visual Masterpieces Since 2010</h2>
+                    <p class="about-description">
+                        At 35 Frames Photography, we believe every moment tells a story worth preserving. With over a decade of experience capturing life's most precious memories, we've had the privilege of serving discerning clients across the globe.
+                    </p>
+                    <p class="about-description">
+                        Our approach combines artistic vision with technical excellence, ensuring each photograph becomes a timeless heirloom. From intimate family portraits to grand wedding celebrations, we bring passion, professionalism, and an unwavering commitment to perfection.
+                    </p>
+                    
+                    <div class="about-achievements">
+                        <div class="achievement-item">
+                            <span class="achievement-number">500+</span>
+                            <span class="achievement-label">Happy Clients</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">15+</span>
+                            <span class="achievement-label">Years Experience</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">10K+</span>
+                            <span class="achievement-label">Photos Captured</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">25+</span>
+                            <span class="achievement-label">Awards Won</span>
+                        </div>
+                    </div>
+
+                    <div class="about-trusted">
+                        <p class="trusted-text">Trusted by clients in</p>
+                        <div class="trusted-flags">
+                            <span>🇺🇸 USA</span>
+                            <span>🇬🇧 UK</span>
+                            <span>🇪🇺 Europe</span>
+                            <span>🇦🇪 UAE</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs" id="faqs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Questions & Answers</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-description">Find answers to common questions about our photography services</p>
+            </div>
+
+            <div class="faqs-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What photography services do you offer?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We specialize in wedding photography, couple photography, engagement shoots, maternity photography, and kid photography. Each service is customized to capture your unique story with artistic excellence and professional care.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you travel for destination shoots?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We serve clients internationally across USA, UK, Europe, and UAE. Destination shoots are our specialty, and we're passionate about capturing your moments in stunning locations worldwide. Travel costs are discussed during consultation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does it take to receive our photos?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We deliver sneak peeks within 48-72 hours. Complete edited galleries are typically ready within 3-4 weeks for standard sessions and 4-6 weeks for weddings. We ensure each image receives meticulous attention to detail.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is included in your photography packages?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our packages include professional photography coverage, expert editing and retouching, high-resolution digital images, online gallery access, and print rights. We offer customizable packages to suit your specific needs and preferences.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can we customize our photography package?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We understand every client has unique needs. We're happy to create custom packages that combine different services, coverage hours, and deliverables. Contact us to discuss your vision and we'll craft the perfect package for you.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you provide both digital and print photos?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All our packages include high-resolution digital images with full print rights. We also offer premium print products including albums, canvas prints, and framed photographs. Let us help you preserve your memories in stunning tangible formats.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-subtitle">Let's Connect</span>
+                    <h2 class="section-title">Book Your Session Today</h2>
+                    <p class="contact-description">
+                        Ready to create timeless memories? Get in touch with us and let's discuss how we can capture your special moments with elegance and artistry.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h4>Email Us</h4>
+                                <p>info@35framesphotography.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h4>Call Us</h4>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M17.657 16.657L13.414 20.9C13.039 21.275 12.5306 21.4854 12.0005 21.4854C11.4704 21.4854 10.962 21.275 10.587 20.9L6.343 16.657C5.22422 15.5381 4.46234 14.1127 4.15369 12.5608C3.84504 11.009 4.00349 9.40047 4.60901 7.93868C5.21452 6.4769 6.2399 5.22749 7.55548 4.34846C8.87107 3.46943 10.4178 3 12 3C13.5822 3 15.1289 3.46943 16.4445 4.34846C17.7601 5.22749 18.7855 6.4769 19.391 7.93868C19.9965 9.40047 20.155 11.009 19.8463 12.5608C19.5377 14.1127 18.7758 15.5381 17.657 16.657V16.657Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h4>Visit Us</h4>
+                                <p>Mumbai, Maharashtra, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Follow Our Journey</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Pinterest" target="_blank" rel="noopener">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8.358 20.063c-0.032 0.005-0.064 0.010-0.096 0.013-1.379 0.155-2.726-0.094-3.915-0.676-1.826-0.893-3.197-2.449-3.825-4.338-0.385-1.158-0.501-2.373-0.347-3.593 0.154-1.218 0.555-2.366 1.189-3.396 1.037-1.684 2.563-2.938 4.428-3.629 1.175-0.436 2.403-0.614 3.659-0.535 1.255 0.079 2.464 0.419 3.571 1.009 1.806 0.963 3.147 2.43 3.91 4.271 0.468 1.131 0.676 2.324 0.619 3.552-0.057 1.228-0.366 2.409-0.922 3.498-0.908 1.778-2.336 3.055-4.154 3.715-1.146 0.416-2.342 0.573-3.565 0.472-1.222-0.101-2.401-0.464-3.476-1.079-0.659-0.377-1.262-0.834-1.791-1.361l-0.084 0.383c-0.151 0.688-0.305 1.375-0.455 2.063-0.096 0.439-0.24 0.861-0.43 1.268-0.308 0.66-0.724 1.248-1.235 1.751-0.089 0.088-0.182 0.171-0.277 0.251-0.047 0.040-0.101 0.042-0.151 0.014-0.050-0.027-0.076-0.075-0.080-0.13-0.032-0.445-0.009-0.888 0.067-1.328 0.076-0.440 0.184-0.873 0.320-1.298 0.208-0.649 0.426-1.295 0.645-1.941 0.438-1.294 0.876-2.588 1.313-3.883 0.027-0.080 0.054-0.160 0.081-0.240-0.243-0.486-0.408-1.005-0.491-1.545-0.083-0.540-0.085-1.085-0.006-1.627 0.159-1.089 0.612-2.046 1.354-2.859 0.468-0.512 1.032-0.911 1.676-1.189 0.406-0.175 0.831-0.294 1.268-0.356 0.437-0.061 0.877-0.065 1.316-0.010 0.878 0.109 1.667 0.467 2.327 1.060 0.416 0.373 0.744 0.822 0.977 1.331 0.233 0.510 0.370 1.052 0.409 1.612 0.078 1.127-0.080 2.224-0.476 3.278-0.198 0.527-0.448 1.032-0.749 1.512-0.300 0.480-0.649 0.924-1.042 1.329-0.785 0.809-1.732 1.364-2.830 1.656-0.549 0.146-1.109 0.212-1.675 0.197-0.566-0.015-1.121-0.121-1.657-0.318-0.536-0.197-1.034-0.479-1.481-0.841-0.089-0.072-0.170-0.152-0.242-0.241 0.050 0.228 0.099 0.456 0.148 0.684 0.196 0.908 0.392 1.816 0.587 2.724 0.098 0.455 0.196 0.910 0.293 1.366z" fill="currentColor"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="wedding">Wedding Photography</option>
+                                <option value="couple">Couple Photography</option>
+                                <option value="engagement">Engagement Photography</option>
+                                <option value="maternity">Maternity Photography</option>
+                                <option value="kid">Kid Photography</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group form-group-full">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your vision and what you're looking for..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading">
+                                <svg class="spinner" width="20" height="20" viewBox="0 0 20 20">
+                                    <circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="50.26548" stroke-dashoffset="0"></circle>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
+
+                    <div class="form-success" id="formSuccess">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="30" stroke="#FF6B35" stroke-width="2"/>
+                            <path d="M20 32L28 40L44 24" stroke="#FF6B35" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3>Message Sent!</h3>
+                        <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/35-Frames-Photography.png" alt="35 Frames Photography" class="footer-logo">
+                    <p class="footer-tagline">Capturing life's precious moments with timeless elegance and artistic excellence.</p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Pinterest" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M8.358 20.063c-0.032 0.005-0.064 0.010-0.096 0.013-1.379 0.155-2.726-0.094-3.915-0.676-1.826-0.893-3.197-2.449-3.825-4.338-0.385-1.158-0.501-2.373-0.347-3.593 0.154-1.218 0.555-2.366 1.189-3.396 1.037-1.684 2.563-2.938 4.428-3.629 1.175-0.436 2.403-0.614 3.659-0.535 1.255 0.079 2.464 0.419 3.571 1.009 1.806 0.963 3.147 2.43 3.91 4.271 0.468 1.131 0.676 2.324 0.619 3.552-0.057 1.228-0.366 2.409-0.922 3.498-0.908 1.778-2.336 3.055-4.154 3.715-1.146 0.416-2.342 0.573-3.565 0.472-1.222-0.101-2.401-0.464-3.476-1.079-0.659-0.377-1.262-0.834-1.791-1.361l-0.084 0.383c-0.151 0.688-0.305 1.375-0.455 2.063-0.096 0.439-0.24 0.861-0.43 1.268-0.308 0.66-0.724 1.248-1.235 1.751-0.089 0.088-0.182 0.171-0.277 0.251-0.047 0.040-0.101 0.042-0.151 0.014-0.050-0.027-0.076-0.075-0.080-0.13-0.032-0.445-0.009-0.888 0.067-1.328 0.076-0.440 0.184-0.873 0.320-1.298 0.208-0.649 0.426-1.295 0.645-1.941 0.438-1.294 0.876-2.588 1.313-3.883 0.027-0.080 0.054-0.160 0.081-0.240-0.243-0.486-0.408-1.005-0.491-1.545-0.083-0.540-0.085-1.085-0.006-1.627 0.159-1.089 0.612-2.046 1.354-2.859 0.468-0.512 1.032-0.911 1.676-1.189 0.406-0.175 0.831-0.294 1.268-0.356 0.437-0.061 0.877-0.065 1.316-0.010 0.878 0.109 1.667 0.467 2.327 1.060 0.416 0.373 0.744 0.822 0.977 1.331 0.233 0.510 0.370 1.052 0.409 1.612 0.078 1.127-0.080 2.224-0.476 3.278-0.198 0.527-0.448 1.032-0.749 1.512-0.300 0.480-0.649 0.924-1.042 1.329-0.785 0.809-1.732 1.364-2.830 1.656-0.549 0.146-1.109 0.212-1.675 0.197-0.566-0.015-1.121-0.121-1.657-0.318-0.536-0.197-1.034-0.479-1.481-0.841-0.089-0.072-0.170-0.152-0.242-0.241 0.050 0.228 0.099 0.456 0.148 0.684 0.196 0.908 0.392 1.816 0.587 2.724 0.098 0.455 0.196 0.910 0.293 1.366z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M17.472 14.382C17.126 14.208 15.452 13.388 15.136 13.274C14.82 13.16 14.594 13.104 14.368 13.45C14.142 13.796 13.502 14.558 13.306 14.784C13.11 15.01 12.914 15.04 12.568 14.866C12.222 14.692 11.074 14.332 9.71 13.12C8.646 12.176 7.928 11.01 7.732 10.664C7.536 10.318 7.71 10.134 7.884 9.96C8.04 9.804 8.23 9.558 8.404 9.362C8.578 9.166 8.634 9.03 8.748 8.804C8.862 8.578 8.806 8.382 8.718 8.208C8.63 8.034 7.912 6.36 7.626 5.668C7.346 4.996 7.062 5.086 6.854 5.076L6.256 5.064C6.03 5.064 5.684 5.152 5.368 5.498C5.052 5.844 4.172 6.664 4.172 8.338C4.172 10.012 5.398 11.626 5.572 11.852C5.746 12.078 7.928 15.414 11.228 16.906C12.004 17.254 12.606 17.464 13.076 17.622C13.856 17.886 14.562 17.852 15.122 17.762C15.744 17.662 17.096 16.936 17.382 16.144C17.668 15.352 17.668 14.678 17.58 14.534C17.492 14.39 17.818 14.556 17.472 14.382ZM12.01 21.798H12.004C10.27 21.797 8.57 21.334 7.084 20.457L6.738 20.248L3.392 21.15L4.31 17.882L4.08 17.524C3.118 15.988 2.608 14.21 2.608 12.388C2.61 6.986 6.964 2.632 12.366 2.632C14.996 2.633 17.472 3.657 19.332 5.519C21.192 7.381 22.214 9.859 22.212 12.487C22.21 17.889 17.856 22.243 12.454 22.243L12.01 21.798Z" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#about">About Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Services</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#portfolio">Wedding Photography</a></li>
+                            <li><a href="#portfolio">Couple Photography</a></li>
+                            <li><a href="#portfolio">Maternity Photography</a></li>
+                            <li><a href="#portfolio">Kids Photography</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Get in Touch</h4>
+                        <ul class="footer-contact">
+                            <li>info@35framesphotography.com</li>
+                            <li>+91 98765 43210</li>
+                            <li>Mumbai, Maharashtra<br>India</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 35 Frames Photography. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M24 8L8 24M8 8L24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M20 26L10 16L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next image">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M12 26L22 16L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="Gallery Image" id="lightboxImage">
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 19V5M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

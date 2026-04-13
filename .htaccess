@@ -1,0 +1,9 @@
+# Check .htaccess exists
+cat .htaccess
+
+# Check file permissions
+ls -la assets/css/
+ls -la assets/js/
+
+# Check if HTTPS is enabled
+curl -I https://35framesphotography.com

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detailed portfolio view by 35 Frames Photography">
+    <title>Photo Details | 35 Frames Photography</title>
+    <link rel="icon" type="image/png" href="assets/images/35-Frames-Photography.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body class="photo-detail-page">
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="assets/images/35-Frames-Photography.png" alt="35 Frames Photography">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link nav-link-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="photo-detail-main">
+        <div class="container">
+            <a class="photo-back-link" href="portfolio.html">← Back to Portfolio</a>
+            <section class="photo-detail-card">
+                <div class="photo-detail-image-wrap">
+                    <img id="detailImage" src="" alt="">
+                </div>
+                <div class="photo-detail-content">
+                    <span id="detailCategory" class="photo-detail-category"></span>
+                    <h1 id="detailTitle" class="photo-detail-title"></h1>
+                    <p id="detailDescription" class="photo-detail-description"></p>
+                </div>
+            </section>
+
+            <section class="related-photos-section">
+                <div class="related-photos-header">
+                    <h2>Related Photos</h2>
+                    <p>More frames from the same story</p>
+                </div>
+                <div id="relatedPhotosGrid" class="related-photos-grid"></div>
+            </section>
+        </div>
+    </main>
+
+    <script src="assets/js/photo-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our complete photography gallery featuring weddings, pre-weddings, engagements, couples, maternity, kids, birthdays, and more.">
+    <meta name="keywords" content="photography gallery, wedding photos, maternity photography, couple photos, kids photography">
+    <meta name="author" content="35 Frames Photography">
+    <meta name="theme-color" content="#FF6B35">
+    
+    <title>Gallery | 35 Frames Photography</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/35-Frames-Photography.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="assets/images/35-Frames-Photography.png" alt="35 Frames Photography">
+                </a>
+            </div>
+            <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+           <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="wedding-photography-bangalore.html" class="nav-link">Wedding</a></li>
+                <li><a href="maternity-photoshoot-in-bangalore.html" class="nav-link">Maternity</a></li>
+                <li><a href="pre-engagement-photoshoot-in-bangalore.html" class="nav-link">Engagement</a></li>
+                 <li><a href="couple-photoshoot-in-bangalore.html" class="nav-link">Couple</a></li>
+                <li><a href="corporate-photography-in-bangalore.html" class="nav-link">Corporate</a></li>
+                <li><a href="kids-photoshoot-bangalore.html" class="nav-link">Kids</a></li> 
+                <li><a href="product-photography-in-bangalore.html" class="nav-link">Product</a></li>   
+                <li><a href="contact.html" class="nav-link nav-link-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="gallery-hero-overlay"></div>
+        <div class="gallery-hero-content">
+            <div class="container">
+                <span class="hero-subtitle fade-in">Our Work</span>
+                <h1 class="hero-title fade-in-up">Complete Photography<br>Gallery</h1>
+                <p class="hero-description fade-in-up-delay">Browse through our extensive collection of captured moments across all categories</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Photos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Explore Gallery</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Category Filter Section -->
+    <section class="category-filter-section">
+        <div class="container">
+            <div class="filter-wrapper">
+                <div class="filter-header">
+                    <h2 class="filter-title">Browse by Category</h2>
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="grid" aria-label="Grid view">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                                <rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                                <rect x="3" y="14" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                                <rect x="14" y="14" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                        <button class="view-btn" data-view="masonry" aria-label="Masonry view">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="3" width="7" height="11" stroke="currentColor" stroke-width="2"/>
+                                <rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                                <rect x="3" y="17" width="7" height="4" stroke="currentColor" stroke-width="2"/>
+                                <rect x="14" y="13" width="7" height="8" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="category-filters">
+                    <button class="category-btn active" data-category="all">
+                        <span class="category-icon">🎯</span>
+                        <span class="category-name">All Photos</span>
+                        <span class="category-count">120+</span>
+                    </button>
+                    <button class="category-btn" data-category="wedding">
+                        <span class="category-icon">💍</span>
+                        <span class="category-name">Wedding</span>
+                        <span class="category-count">35</span>
+                    </button>
+                    <button class="category-btn" data-category="pre-wedding">
+                        <span class="category-icon">💑</span>
+                        <span class="category-name">Pre-Wedding</span>
+                        <span class="category-count">28</span>
+                    </button>
+                    <button class="category-btn" data-category="engagement">
+                        <span class="category-icon">💎</span>
+                        <span class="category-name">Engagement</span>
+                        <span class="category-count">22</span>
+                    </button>
+                    <button class="category-btn" data-category="couple">
+                        <span class="category-icon">❤️</span>
+                        <span class="category-name">Couple</span>
+                        <span class="category-count">18</span>
+                    </button>
+                    <button class="category-btn" data-category="maternity">
+                        <span class="category-icon">🤰</span>
+                        <span class="category-name">Maternity</span>
+                        <span class="category-count">15</span>
+                    </button>
+                    <button class="category-btn" data-category="kids">
+                        <span class="category-icon">👶</span>
+                        <span class="category-name">Kids</span>
+                        <span class="category-count">20</span>
+                    </button>
+                    <button class="category-btn" data-category="birthday">
+                        <span class="category-icon">🎂</span>
+                        <span class="category-name">Birthday</span>
+                        <span class="category-count">12</span>
+                    </button>
+                    <button class="category-btn" data-category="family">
+                        <span class="category-icon">👨‍👩‍👧‍👦</span>
+                        <span class="category-name">Family</span>
+                        <span class="category-count">16</span>
+                    </button>
+                    <button class="category-btn" data-category="event">
+                        <span class="category-icon">🎉</span>
+                        <span class="category-name">Events</span>
+                        <span class="category-count">14</span>
+                    </button>
+                    <button class="category-btn" data-category="portrait">
+                        <span class="category-icon">📸</span>
+                        <span class="category-name">Portrait</span>
+                        <span class="category-count">10</span>
+                    </button>
+                    <button class="category-btn" data-category="corporate">
+                        <span class="category-icon">💼</span>
+                        <span class="category-name">Corporate</span>
+                        <span class="category-count">8</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery Section -->
+    <section class="main-gallery">
+        <div class="container">
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                
+                <!-- Wedding Photos -->
+                <div class="gallery-item" data-category="wedding">
+                    <div class="gallery-image">
+                        <img src="assets/images/35F00172.JPG" alt="Wedding Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Wedding</span>
+                                <h3 class="gallery-title">Elegant Wedding Ceremony</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="wedding">
+                    <div class="gallery-image">
+                        <img src="assets/images/35F00173.JPG" alt="Wedding Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Wedding</span>
+                                <h3 class="gallery-title">Traditional Wedding Rituals</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="wedding">
+                    <div class="gallery-image">
+                        <img src="assets/images/35F00167.JPG" alt="Wedding Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Wedding</span>
+                                <h3 class="gallery-title">Bridal Portrait</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Couple Photos -->
+                <div class="gallery-item" data-category="couple pre-wedding">
+                    <div class="gallery-image">
+                        <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__6_.jpeg" alt="Couple Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Couple</span>
+                                <h3 class="gallery-title">Romantic Couple Session</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="couple engagement">
+                    <div class="gallery-image">
+                        <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__7_.jpeg" alt="Couple Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Couple</span>
+                                <h3 class="gallery-title">Love Story</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maternity Photos -->
+                <div class="gallery-item" data-category="maternity">
+                    <div class="gallery-image">
+                        <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__1_.jpeg" alt="Maternity Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Maternity</span>
+                                <h3 class="gallery-title">Expecting Joy</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="maternity">
+                    <div class="gallery-image">
+                        <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__2_.jpeg" alt="Maternity Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Maternity</span>
+                                <h3 class="gallery-title">Glowing Beauty</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="maternity">
+                    <div class="gallery-image">
+                        <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__3_.jpeg" alt="Maternity Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Maternity</span>
+                                <h3 class="gallery-title">Awaiting Miracles</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="maternity couple">
+                    <div class="gallery-image">
+                        <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__4_.jpeg" alt="Maternity Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Maternity</span>
+                                <h3 class="gallery-title">Parents To Be</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="maternity engagement">
+                    <div class="gallery-image">
+                        <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__5_.jpeg" alt="Engagement Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Engagement</span>
+                                <h3 class="gallery-title">Beautiful Moments</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kids Photos -->
+                <div class="gallery-item" data-category="kids birthday">
+                    <div class="gallery-image">
+                        <img src="assets/images/04.jpg" alt="Kids Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Kids</span>
+                                <h3 class="gallery-title">Precious Innocence</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="kids family">
+                    <div class="gallery-image">
+                        <img src="assets/images/05.jpg" alt="Kids Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Kids</span>
+                                <h3 class="gallery-title">Little Angels</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duplicate items with different categories for demo -->
+                <div class="gallery-item" data-category="pre-wedding couple">
+                    <div class="gallery-image">
+                        <img src="assets/images/WhatsApp_Image_2025-11-11_at_14_36_28__6_.jpeg" alt="Pre-Wedding Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Pre-Wedding</span>
+                                <h3 class="gallery-title">Before the Big Day</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="family portrait">
+                    <div class="gallery-image">
+                        <img src="assets/images/04.jpg" alt="Family Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Family</span>
+                                <h3 class="gallery-title">Family Bonds</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="event corporate">
+                    <div class="gallery-image">
+                        <img src="assets/images/35F00167.JPG" alt="Event Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Event</span>
+                                <h3 class="gallery-title">Corporate Event</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image">
+                        <img src="assets/images/05.jpg" alt="Portrait Photography" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Portrait</span>
+                                <h3 class="gallery-title">Professional Portrait</h3>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3H21V9M9 21H3V15M21 3L14 10M3 21L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-wrapper">
+                <button class="btn btn-primary load-more-btn" id="loadMoreBtn">
+                    <span class="btn-text">Load More Photos</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 5V19M5 12L12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="gallery-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Loved What You Saw?</h2>
+                <p class="cta-text">Let's create stunning memories together. Book your photography session today!</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Book a Session</a>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/35-Frames-Photography.png" alt="35 Frames Photography" class="footer-logo">
+                    <p class="footer-tagline">Capturing life's precious moments with timeless elegance and artistic excellence.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/35framesphotography" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#portfolio">Portfolio</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Services</h4>
+                        <ul class="footer-menu">
+                            <li><a href="gallery.html">Wedding Photography</a></li>
+                            <li><a href="gallery.html">Couple Photography</a></li>
+                            <li><a href="gallery.html">Maternity Photography</a></li>
+                            <li><a href="gallery.html">Kids Photography</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Get in Touch</h4>
+                        <ul class="footer-contact">
+                            <li>35framesphotography@gmail.com</li>
+                            <li>+91 99106 55520</li>
+                            <li>New Mustafabad, Delhi 110094</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 35 Frames Photography. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M24 8L8 24M8 8L24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M20 26L10 16L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next image">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M12 26L22 16L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="Gallery Image" id="lightboxImage">
+            <div class="lightbox-info">
+                <span class="lightbox-category"></span>
+                <h3 class="lightbox-title"></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 19V5M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>
