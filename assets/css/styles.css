@@ -2112,8 +2112,14 @@ ul {
     margin: 0 auto;
     padding: 0 45px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.nav-logo {
+    position: absolute;
+    left: 45px;
 }
 
 .nav-logo img {
@@ -2253,6 +2259,10 @@ ul {
 
 /* Mobile Menu Styles */
 @media (max-width: 992px) {
+    .nav-logo {
+        position: static;
+    }
+
     .nav-menu {
         position: fixed;
         top: 0;
@@ -3424,15 +3434,17 @@ ul {
    ============================================ */
 .portfolio-modern .portfolio-toolbar {
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
+    grid-template-columns: 1fr;
     gap: 18px;
     margin-bottom: 22px;
+    justify-items: center;
 }
 
 .portfolio-modern .portfolio-filters-modern {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .portfolio-filter-btn {
@@ -3476,6 +3488,7 @@ ul {
 .portfolio-result-count {
     color: rgba(255, 255, 255, 0.72);
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .portfolio-grid-modern {
@@ -3527,18 +3540,7 @@ ul {
 }
 
 .portfolio-open {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background: var(--gradient-primary);
-    color: var(--color-white);
-    border-radius: 999px;
-    padding: 8px 12px;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    z-index: 2;
+    display: none;
 }
 
 .portfolio-card.is-hidden {

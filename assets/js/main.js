@@ -6,8 +6,33 @@ const navbar = document.getElementById('navbar');
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
 const navOverlay = document.getElementById('navOverlay');
-const navLinks = document.querySelectorAll('.nav-link');
+let navLinks = document.querySelectorAll('.nav-link');
 const backToTop = document.getElementById('backToTop');
+
+function normalizeNavbarMenu() {
+    if (!navMenu) return;
+
+    navMenu.innerHTML = `
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="pre-engagement-photoshoot-in-bangalore.html" class="nav-link">Services</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link nav-link-cta">Contact Us</a></li>
+    `;
+
+    navLinks = navMenu.querySelectorAll('.nav-link');
+    const currentPage = window.location.pathname.split('/').pop().toLowerCase() || 'index.html';
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        const href = (link.getAttribute('href') || '').toLowerCase();
+        if (href === currentPage) {
+            link.classList.add('active');
+        }
+    });
+}
+
+normalizeNavbarMenu();
 
 /* =========================================
    NAVBAR SCROLL EFFECT

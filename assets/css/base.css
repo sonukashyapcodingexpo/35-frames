@@ -691,6 +691,7 @@
     z-index: 10;
     text-align: center;
     color: var(--color-white);
+    margin-top: 18px;
 }
 
 .contact-hero-content .hero-subtitle {
@@ -2928,6 +2929,47 @@
 @media (max-width: 768px) {
     .related-photos-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Hero size override: reduce by ~50% for about/contact pages */
+.about-hero {
+    height: 40vh;
+    min-height: 300px;
+}
+
+.contact-hero {
+    height: 58vh;
+    min-height: 413px;
+}
+
+.about-hero-content,
+.contact-hero-content {
+    transform: scale(0.5);
+    transform-origin: center center;
+}
+
+@media (max-width: 992px) {
+    .about-hero {
+        height: 35vh;
+        min-height: 275px;
+    }
+
+    .contact-hero {
+        height: 49vh;
+        min-height: 376px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        height: 30vh;
+        min-height: 250px;
+    }
+
+    .contact-hero {
+        height: 46vh;
+        min-height: 337px;
     }
 }
 

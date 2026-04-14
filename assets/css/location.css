@@ -711,6 +711,51 @@
     }
 }
 
+/* Hero size override: reduce by ~50% for service pages */
+.location-hero {
+    min-height: 25vh;
+    padding: 4px 0 2px;
+}
+
+.location-hero-content {
+    transform: scale(0.5);
+    transform-origin: center center;
+}
+
+/* Compact inner spacing for service hero content */
+.location-badge {
+    padding: 3px 7px;
+    margin-bottom: 8px;
+}
+
+.location-title {
+    margin-bottom: 8px;
+}
+
+.location-description {
+    margin: 0 auto 12px;
+}
+
+.location-cta-buttons {
+    margin-bottom: 15px;
+}
+
+.location-stats {
+    margin-top: 15px;
+    gap: 12px;
+}
+
+.stat-box {
+    padding: 6px 9px;
+}
+
+@media (max-width: 768px) {
+    .location-hero {
+        min-height: 20vh;
+        padding: 3px 0 2px;
+    }
+}
+
 @media (max-width: 480px) {
     .location-title {
         font-size: 36px;
