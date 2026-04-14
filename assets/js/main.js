@@ -298,6 +298,85 @@ document.addEventListener('DOMContentLoaded', () => {
 
     applyFilters();
 });
+
+/* =========================================
+   HOME GALLERY -> PHOTO DETAILS REDIRECT
+========================================= */
+document.addEventListener('DOMContentLoaded', () => {
+    const homeGallery = document.querySelector('#gallery .gallery-grid');
+    if (!homeGallery || document.body.classList.contains('portfolio-reference')) return;
+
+    const categoryLabelMap = {
+        wedding: 'Wedding',
+        engagement: 'Engagement',
+        couple: 'Couple',
+        maternity: 'Maternity',
+        kids: 'Kids',
+        family: 'Family',
+        birthday: 'Birthday',
+        corporate: 'Corporate'
+    };
+
+    const descriptionMap = {
+        wedding: 'A timeless wedding frame crafted with emotional storytelling, elegant composition, and refined editing for a premium cinematic finish.',
+        engagement: 'A romantic engagement portrait that captures chemistry and celebration through expressive posing, balanced light, and clean color grading.',
+        couple: 'An intimate couple portrait focused on natural interaction, graceful movement, and modern editorial styling.',
+        maternity: 'A graceful maternity portrait designed to celebrate motherhood with soft tones, flattering light, and heartfelt expression.',
+        kids: 'A joyful kids portrait that preserves spontaneity, playfulness, and innocence in a polished visual style.',
+        family: 'A warm family portrait composed to highlight connection, togetherness, and timeless memories.',
+        birthday: 'A vibrant birthday frame that preserves celebration energy, candid reactions, and beautiful event detail.',
+        corporate: 'A confident corporate portrait featuring clean framing, modern tones, and a professional editorial finish.'
+    };
+
+    const toTitleCase = value =>
+        value
+            .replace(/[-_]+/g, ' ')
+            .replace(/\b\w/g, char => char.toUpperCase())
+            .trim();
+
+    const getCategoryFromSrc = src => {
+        const match = src.match(/assets\/images\/([^/]+)\//i);
+        if (!match) return 'portfolio';
+        return match[1].toLowerCase();
+    };
+
+    const getPhotoTitle = (fileName, categoryLabel) => {
+        const normalized = fileName
+            .replace(/\.[^.]+$/, '')
+            .replace(/[-_]+/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+
+        if (!normalized) return `${categoryLabel} Frame`;
+        return toTitleCase(normalized);
+    };
+
+    homeGallery.addEventListener('click', event => {
+        const galleryItem = event.target.closest('.gallery-item');
+        if (!galleryItem) return;
+
+        event.preventDefault();
+        const image = galleryItem.querySelector('img');
+        if (!image) return;
+
+        const src = image.getAttribute('src') || image.src;
+        const categoryKey = getCategoryFromSrc(src);
+        const categoryLabel = categoryLabelMap[categoryKey] || 'Portfolio';
+        const fileName = src.split('/').pop() || '';
+        const title = getPhotoTitle(fileName, categoryLabel);
+        const description = descriptionMap[categoryKey] || 'A premium image from our portfolio, crafted with clean composition and timeless visual storytelling.';
+
+        const params = new URLSearchParams({
+            src,
+            category: categoryLabel,
+            title,
+            alt: image.getAttribute('alt') || title,
+            description
+        });
+
+        window.location.href = `photo-details.html?${params.toString()}`;
+    });
+});
 // ============================================
 // GALLERY PAGE - JAVASCRIPT
 // 35 FRAMES PHOTOGRAPHY
