@@ -9,30 +9,71 @@ const navOverlay = document.getElementById('navOverlay');
 let navLinks = document.querySelectorAll('.nav-link');
 const backToTop = document.getElementById('backToTop');
 
+const SERVICE_PAGE_NAMES = [
+    'pre-engagement-photoshoot-in-bangalore.html',
+    'kids-photoshoot-bangalore.html',
+    'maternity-photoshoot-in-bangalore.html'
+];
+
 function normalizeNavbarMenu() {
     if (!navMenu) return;
 
+    const currentPage = window.location.pathname.split('/').pop().toLowerCase() || 'index.html';
+    const isIndex = currentPage === 'index.html' || currentPage === '';
+    const homeHref = isIndex ? '#home' : 'index.html';
+    const servicesOverviewHref = isIndex ? '#portfolio' : 'index.html#portfolio';
+
     navMenu.innerHTML = `
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="pre-engagement-photoshoot-in-bangalore.html" class="nav-link">Services</a></li>
+        <li><a href="${homeHref}" class="nav-link">Home</a></li>
+        <li class="nav-item-has-dropdown">
+            <a href="${servicesOverviewHref}" class="nav-link nav-link-dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+            <ul class="nav-dropdown" role="menu" aria-label="Services">
+                <li class="nav-dropdown-heading" aria-hidden="true">
+                    <span class="nav-dropdown-title">Services</span>
+                    <span class="nav-dropdown-heading-line"></span>
+                </li>
+                <li role="none"><a role="menuitem" href="pre-engagement-photoshoot-in-bangalore.html" class="nav-dropdown-link">Pre Wedding</a></li>
+                <li role="none"><a role="menuitem" href="pre-engagement-photoshoot-in-bangalore.html" class="nav-dropdown-link">Engagement</a></li>
+                <li role="none"><a role="menuitem" href="kids-photoshoot-bangalore.html" class="nav-dropdown-link">Kids</a></li>
+                <li role="none"><a role="menuitem" href="maternity-photoshoot-in-bangalore.html" class="nav-dropdown-link">Maternity</a></li>
+            </ul>
+        </li>
         <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
         <li><a href="contact.html" class="nav-link nav-link-cta">Contact Us</a></li>
     `;
 
     navLinks = navMenu.querySelectorAll('.nav-link');
-    const currentPage = window.location.pathname.split('/').pop().toLowerCase() || 'index.html';
+    const servicesTrigger = navMenu.querySelector('.nav-link-dropdown');
 
     navLinks.forEach(link => {
         link.classList.remove('active');
-        const href = (link.getAttribute('href') || '').toLowerCase();
-        if (href === currentPage) {
+        const raw = (link.getAttribute('href') || '').toLowerCase();
+        if (raw === currentPage) {
+            link.classList.add('active');
+        } else if (isIndex && currentPage === 'index.html' && raw === '#home') {
             link.classList.add('active');
         }
     });
-}
 
-normalizeNavbarMenu();
+    if (SERVICE_PAGE_NAMES.includes(currentPage)) {
+        servicesTrigger?.classList.add('active');
+    }
+
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            closeMenu();
+
+            navMenu.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+
+            if (link.classList.contains('nav-dropdown-link')) {
+                servicesTrigger?.classList.add('active');
+            } else if (link.classList.contains('nav-link')) {
+                link.classList.add('active');
+            }
+        });
+    });
+}
 
 /* =========================================
    NAVBAR SCROLL EFFECT
@@ -63,6 +104,8 @@ function closeMenu() {
     document.body.style.overflow = '';
 }
 
+normalizeNavbarMenu();
+
 navToggle?.addEventListener('click', () => {
     navToggle.classList.toggle('active');
     navMenu.classList.toggle('active');
@@ -73,15 +116,6 @@ navToggle?.addEventListener('click', () => {
 });
 
 navOverlay?.addEventListener('click', closeMenu);
-
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        closeMenu();
-
-        navLinks.forEach(l => l.classList.remove('active'));
-        link.classList.add('active');
-    });
-});
 
 /* =========================================
    SMOOTH SCROLL

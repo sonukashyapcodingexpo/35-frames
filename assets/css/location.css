@@ -278,8 +278,7 @@
 
 /* Pricing Section */
 .pricing-section {
-    padding: 120px 0;
-    background: linear-gradient(180deg, #1A1A1A 0%, #0F0F0F 100%);
+    display: none;
 }
 
 .pricing-grid {
