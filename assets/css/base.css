@@ -66,7 +66,7 @@
 
 /* Our Story Section */
 .our-story {
-    padding: 140px 0;
+    padding: 70px 0;
     background: linear-gradient(180deg, #0F0F0F 0%, #1A1A1A 100%);
 }
 
@@ -131,7 +131,7 @@
 
 /* Mission & Vision Section */
 .mission-vision {
-    padding: 140px 0;
+    padding: 70px 0;
     background: #0A0A0A;
     position: relative;
 }
@@ -206,7 +206,7 @@
 
 /* Team Section */
 .team {
-    padding: 140px 0;
+    padding: 70px 0;
     background: linear-gradient(180deg, #1A1A1A 0%, #0F0F0F 100%);
 }
 
@@ -317,7 +317,7 @@
 
 /* Awards Section */
 .awards {
-    padding: 140px 0;
+    padding: 70px 0;
     background: #0A0A0A;
 }
 
@@ -374,7 +374,7 @@
 
 /* Why Choose Us Section */
 .why-choose {
-    padding: 140px 0;
+    padding: 70px 0;
     background: linear-gradient(180deg, #1A1A1A 0%, #0F0F0F 100%);
 }
 
@@ -445,7 +445,7 @@
 
 /* CTA Section */
 .cta-section {
-    padding: 120px 0;
+    padding: 60px 0;
     background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 184, 77, 0.05) 100%);
     position: relative;
 }
@@ -519,7 +519,7 @@
     }
     
     .our-story {
-        padding: 100px 0;
+        padding: 50px 0;
     }
     
     .story-content {
@@ -544,7 +544,7 @@
     .team,
     .awards,
     .why-choose {
-        padding: 100px 0;
+        padding: 50px 0;
     }
     
     .mv-grid {
@@ -583,7 +583,7 @@
     .awards,
     .why-choose,
     .cta-section {
-        padding: 80px 0;
+        padding: 40px 0;
     }
     
     .story-paragraph {
@@ -722,10 +722,10 @@
 
 /* Contact Info Cards */
 .contact-info-section {
-    padding: 100px 0;
+    padding: 50px 0;
     background: #0A0A0A;
     position: relative;
-    margin-top: -80px;
+    margin-top: -40px;
     z-index: 20;
 }
 
@@ -834,7 +834,7 @@
 
 /* Map & Form Section */
 .map-form-section {
-    padding: 100px 0;
+    padding: 50px 0;
     background: linear-gradient(180deg, #0F0F0F 0%, #1A1A1A 100%);
 }
 
@@ -1077,7 +1077,7 @@
 
 /* Quick Contact Banner */
 .quick-contact-banner {
-    padding: 80px 0;
+    padding: 40px 0;
     background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 184, 77, 0.05) 100%);
     position: relative;
 }
@@ -1128,7 +1128,7 @@
 
 /* Contact FAQ */
 .contact-faq {
-    padding: 100px 0;
+    padding: 50px 0;
     background: #0A0A0A;
 }
 
@@ -1236,14 +1236,14 @@
     }
     
     .contact-info-section {
-        padding: 80px 0;
-        margin-top: -60px;
+        padding: 40px 0;
+        margin-top: -30px;
     }
     
     .map-form-section,
     .quick-contact-banner,
     .contact-faq {
-        padding: 80px 0;
+        padding: 40px 0;
     }
     
     .banner-content {
@@ -1271,8 +1271,8 @@
     }
     
     .contact-info-section {
-        padding: 60px 0;
-        margin-top: -50px;
+        padding: 30px 0;
+        margin-top: -25px;
     }
     
     .contact-cards-grid {
@@ -2167,8 +2167,8 @@
 /* Portfolio hero modern treatment */
 .portfolio-reference .gallery-hero {
     min-height: 70vh;
-    padding-top: 77px;
-    padding-bottom: 70px;
+    padding-top: 38px;
+    padding-bottom: 35px;
     background:
         radial-gradient(circle at 14% 26%, rgba(255, 107, 53, 0.28) 0%, transparent 38%),
         radial-gradient(circle at 82% 14%, rgba(255, 184, 77, 0.2) 0%, transparent 36%),
@@ -2218,8 +2218,30 @@
 }
 
 .portfolio-reference .hero-stats {
-    margin-top: 34px;
+    margin-top: 17px;
     gap: clamp(20px, 5vw, 70px);
+}
+
+/* Reduce vertical gaps on Portfolio page (~50%) */
+.portfolio-reference .category-filter-section {
+    padding: 40px 0;
+    margin-top: -30px;
+}
+
+.portfolio-reference .filter-wrapper {
+    padding: 25px;
+}
+
+.portfolio-reference .filter-header {
+    margin-bottom: 20px;
+}
+
+.portfolio-reference .main-gallery {
+    padding: 50px 0;
+}
+
+.portfolio-reference .gallery-cta {
+    padding: 60px 0;
 }
 
 .portfolio-reference .hero-stats .stat-item {
@@ -2306,7 +2328,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 22px;
     box-shadow: 0 22px 50px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.06);
-    padding: 28px 28px 24px;
+    padding: 14px 14px 12px;
     position: relative;
     overflow: hidden;
 }
@@ -2642,6 +2664,8 @@
 /* Portfolio Hero - Cinematic motion redesign */
 .portfolio-reference .gallery-hero {
     min-height: 92vh;
+    padding-top: 38px;
+    padding-bottom: 35px;
     background:
         radial-gradient(circle at 12% 20%, rgba(255, 107, 53, 0.26) 0%, transparent 36%),
         radial-gradient(circle at 88% 72%, rgba(255, 184, 77, 0.2) 0%, transparent 34%),
@@ -2775,8 +2799,8 @@
 @media (max-width: 768px) {
     .portfolio-reference .gallery-hero {
         min-height: 74vh;
-        padding-top: 89px;
-        padding-bottom: 55px;
+        padding-top: 45px;
+        padding-bottom: 28px;
     }
 
     .portfolio-reference .gallery-hero-content .hero-title {

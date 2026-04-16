@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #0F0F0F 0%, #1A1A1A 100%);
-    padding: 140px 0 100px;
+    padding: 70px 0 50px;
 }
 
 .location-hero::before {
@@ -145,7 +145,7 @@
 
 /* Services Section */
 .services-section {
-    padding: 120px 0;
+    padding: 60px 0;
     background: linear-gradient(180deg, #0F0F0F 0%, #1A1A1A 100%);
 }
 
@@ -210,7 +210,7 @@
 
 /* Locations Section */
 .locations-section {
-    padding: 120px 0;
+    padding: 60px 0;
     background: #0A0A0A;
 }
 
@@ -388,7 +388,7 @@
 
 /* Benefits Section */
 .why-choose-section {
-    padding: 120px 0;
+    padding: 60px 0;
     background: #0A0A0A;
 }
 
@@ -435,7 +435,7 @@
 
 /* Portfolio Preview */
 .portfolio-preview {
-    padding: 120px 0;
+    padding: 60px 0;
     background: linear-gradient(180deg, #1A1A1A 0%, #0F0F0F 100%);
 }
 
@@ -494,7 +494,7 @@
 
 /* Contact Form Section */
 .contact-form-section {
-    padding: 120px 0;
+    padding: 60px 0;
     background: #0A0A0A;
 }
 
@@ -632,7 +632,7 @@
 
 /* FAQ Section */
 .faq-section {
-    padding: 120px 0;
+    padding: 60px 0;
     background: linear-gradient(180deg, #1A1A1A 0%, #0F0F0F 100%);
 }
 
@@ -680,7 +680,7 @@
 
 @media (max-width: 768px) {
     .location-hero {
-        padding: 120px 0 80px;
+        padding: 60px 0 40px;
     }
     
     .location-title {

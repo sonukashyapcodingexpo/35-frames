@@ -31,7 +31,7 @@
     --font-accent: 'Crimson Text', serif;
     
     /* Spacing */
-    --section-padding: 160px;
+    --section-padding: 80px;
     --container-width: 1440px;
     
     /* Premium Effects */
@@ -126,7 +126,7 @@ ul {
 /* Section Headers - Ultra Premium */
 .section-header {
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     position: relative;
     z-index: 1;
 }
@@ -167,7 +167,7 @@ ul {
 
 .section-title {
     font-family: var(--font-display);
-    font-size: 72px;
+    font-size: 32px;
     font-weight: 800;
     line-height: 1.15;
     color: var(--color-white);
@@ -190,7 +190,7 @@ ul {
 }
 
 .section-description {
-    font-size: 19px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.7);
     max-width: 800px;
     margin: 0 auto;
@@ -204,7 +204,7 @@ ul {
     display: inline-block;
     padding: 22px 50px;
     font-family: var(--font-body);
-    font-size: 14px;
+    font-size: 8px;
     font-weight: 700;
     letter-spacing: 2.5px;
     text-transform: uppercase;
@@ -708,7 +708,7 @@ ul {
 
 .filter-btn {
     padding: 17px 40px;
-    font-size: 13px;
+    font-size: 8px;
     font-weight: 700;
     letter-spacing: 2.5px;
     text-transform: uppercase;
@@ -1829,17 +1829,33 @@ ul {
    RESPONSIVE DESIGN
    ============================================ */
 
+/* Laptop/Desktop sizing baseline */
+@media (min-width: 992px) {
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-description {
+        font-size: 16px;
+    }
+
+    .btn,
+    .filter-btn {
+        font-size: 8px;
+    }
+}
+
 @media (max-width: 1200px) {
     .container {
         padding: 0 40px;
     }
     
     :root {
-        --section-padding: 120px;
+        --section-padding: 60px;
     }
     
     .section-title {
-        font-size: 60px;
+        font-size: 32px;
     }
     
     .hero-title {
@@ -1854,7 +1870,7 @@ ul {
 
 @media (max-width: 992px) {
     :root {
-        --section-padding: 100px;
+        --section-padding: 50px;
     }
     
     .nav-menu {
@@ -1893,7 +1909,7 @@ ul {
     }
     
     .section-title {
-        font-size: 50px;
+        font-size: 32px;
     }
     
     .about-content {
@@ -1913,7 +1929,7 @@ ul {
 
 @media (max-width: 768px) {
     :root {
-        --section-padding: 80px;
+        --section-padding: 40px;
     }
     
     .container {
@@ -1929,7 +1945,7 @@ ul {
     }
     
     .section-title {
-        font-size: 42px;
+        font-size: 28px;
     }
     
     .portfolio-grid {
@@ -1964,17 +1980,20 @@ ul {
 }
 
 @media (max-width: 480px) {
+    :root {
+        --section-padding: 30px;
+    }
     .hero-title {
         font-size: 40px;
     }
     
     .section-title {
-        font-size: 36px;
+        font-size: 32px;
     }
     
     .btn {
         padding: 18px 38px;
-        font-size: 12px;
+        font-size: 8px;
     }
     
     .hero-controls {
@@ -2321,11 +2340,11 @@ ul {
     }
     
     :root {
-        --section-padding: 120px;
+        --section-padding: 60px;
     }
     
     .section-title {
-        font-size: 60px;
+        font-size: 32px;
     }
     
     .hero-title {
@@ -2348,7 +2367,7 @@ ul {
 
 @media (max-width: 992px) {
     :root {
-        --section-padding: 100px;
+        --section-padding: 50px;
     }
     
     .container {
@@ -2477,11 +2496,11 @@ ul {
     
     /* Section Titles */
     .section-title {
-        font-size: 50px;
+        font-size: 32px;
     }
     
     .section-description {
-        font-size: 17px;
+        font-size: 16px;
     }
     
     /* Portfolio Mobile */
@@ -2496,7 +2515,7 @@ ul {
     
     .filter-btn {
         padding: 14px 28px;
-        font-size: 12px;
+        font-size: 8px;
     }
     
     /* Gallery Mobile */
@@ -2564,7 +2583,7 @@ ul {
 
 @media (max-width: 768px) {
     :root {
-        --section-padding: 80px;
+        --section-padding: 40px;
     }
     
     html {
@@ -2655,7 +2674,7 @@ ul {
     
     /* Sections */
     .section-header {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
     
     .section-subtitle {
@@ -2670,7 +2689,7 @@ ul {
     }
     
     .section-title {
-        font-size: 40px;
+        font-size: 32px;
         margin-bottom: 20px;
         letter-spacing: -1px;
     }
@@ -2689,7 +2708,7 @@ ul {
     /* Buttons */
     .btn {
         padding: 18px 40px;
-        font-size: 12px;
+        font-size: 8px;
         letter-spacing: 2px;
     }
     
@@ -2701,7 +2720,7 @@ ul {
     
     .filter-btn {
         padding: 12px 22px;
-        font-size: 11px;
+        font-size: 8px;
         letter-spacing: 1.5px;
     }
     
@@ -2979,7 +2998,7 @@ ul {
 
 @media (max-width: 480px) {
     :root {
-        --section-padding: 60px;
+        --section-padding: 30px;
     }
     
     .container {
@@ -3054,7 +3073,7 @@ ul {
     
     /* Sections */
     .section-header {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
     
     .section-subtitle {
@@ -3078,13 +3097,13 @@ ul {
     }
     
     .section-description {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     /* Buttons */
     .btn {
         padding: 16px 32px;
-        font-size: 11px;
+        font-size: 8px;
         letter-spacing: 1.5px;
     }
     
@@ -3096,7 +3115,7 @@ ul {
     
     .filter-btn {
         padding: 10px 18px;
-        font-size: 10px;
+        font-size: 8px;
     }
     
     .portfolio-image {
