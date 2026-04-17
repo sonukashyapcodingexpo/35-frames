@@ -952,6 +952,120 @@ ul {
 }
 
 /* ============================================
+   HOME PRICING SECTION
+   ============================================ */
+.pricing-section {
+    padding: var(--section-padding) 0;
+    background: linear-gradient(180deg, #141414 0%, #0e0e0e 100%);
+}
+
+.pricing-section h2 {
+    font-family: var(--font-display);
+    font-size: 32px;
+    color: var(--color-white);
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.pricing-section .subtext {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.72);
+    text-align: center;
+    max-width: 860px;
+    margin: 0 auto 34px;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+.pricing-section .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 26px 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.pricing-section .card h3 {
+    font-family: var(--font-display);
+    color: var(--color-white);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.pricing-section .price {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 16px;
+}
+
+.pricing-section .card ul {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 22px;
+    flex: 1;
+}
+
+.pricing-section .card li {
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.pricing-section .card .btn {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    background: var(--gradient-primary);
+    color: var(--color-white);
+}
+
+.pricing-section .card .btn.primary {
+    background: var(--gradient-primary);
+    color: var(--color-white);
+}
+
+.pricing-section .card.featured {
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.pricing-section .tag {
+    display: none;
+}
+
+.pricing-section .note {
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+}
+
+@media (max-width: 992px) {
+    .pricing-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-section h2 {
+        font-size: 28px;
+    }
+
+    .pricing-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================
    GALLERY - MASONRY WITH 3D DEPTH
    ============================================ */
 

@@ -25,6 +25,7 @@ function normalizeNavbarMenu() {
 
     navMenu.innerHTML = `
         <li><a href="${homeHref}" class="nav-link">Home</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
         <li class="nav-item-has-dropdown">
             <a href="${servicesOverviewHref}" class="nav-link nav-link-dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
             <ul class="nav-dropdown" role="menu" aria-label="Services">
@@ -38,9 +39,8 @@ function normalizeNavbarMenu() {
                 <li role="none"><a role="menuitem" href="maternity-photoshoot-in-bangalore.html" class="nav-dropdown-link">Maternity</a></li>
             </ul>
         </li>
-        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="contact.html" class="nav-link nav-link-cta">Contact Us</a></li>
+        <li><a href="contact.html" class="nav-link nav-link-cta">Get Quote</a></li>
     `;
 
     navLinks = navMenu.querySelectorAll('.nav-link');
